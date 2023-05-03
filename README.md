@@ -123,6 +123,9 @@ We made it executable with the chmod +x command than executed it.
 
 It works well on smaller scripts, but copy pasting the string of a complex program could crash the shell.
 
+Notes:
+
+If you can't download your files from your attacker machine, try to upload them to pastebin, dropbox or other cloud storage services and retrive them from there.
 
 
 
